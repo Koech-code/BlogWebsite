@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="homebg">
+  <h1 id="herotext">Welcome to Bongasport blog website</h1>
+  {% for home in home_view %}
+  <div id="homepagetext">
+    <h3 id="herotitle">{{home.title}}</h3>
+    <p id="contents">{{home.text}}</p>
+  </div>
+  {% endfor %}
+</div>
+  
+{% endblock content %}
